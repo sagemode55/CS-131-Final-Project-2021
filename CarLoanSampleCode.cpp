@@ -72,7 +72,7 @@ int main()
     numberOfMonths = loanLength * 12;
     monthlyIncome = annualIncome /12;
  
-   monthlyPayment = principal *  (monthlyInterest / (1 - pow( (1 + monthlyInterest), (numberOfMonths * -1)) ) );
+   monthlyPayment = principal *  (monthlyInterest / (1 - pow( (1 + monthlyInterest), (numberOfMonths * -1)) ) ); // The heart 
 
      if ( monthlyIncome *= 4 > monthlyPayment)
  
