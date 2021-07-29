@@ -51,18 +51,14 @@ int main()
     return 0;
 }
 
-
 double computeRecursive(double Balance, double rate, double time) 
 { 
 if ( time <= 0 ) 
 { 
   return Balance; 
 } 
-
 return computeRecursive(Balance*(1+rate/100), rate, time-1);
 } 
-
-
 
 void printTable(double Balance, double rate, double time){
 float bal = Balance;
@@ -79,12 +75,8 @@ float bal = Balance;
        cout <<"\t\t\t"<<"Interest: "<<right <<"\t"<< interest <<  endl;
        
        bal += interest;
-
-       
     }
-
 }
-
 
 double computeIterative(double Balance, double rate, double time)
 {
@@ -105,11 +97,6 @@ double computeIterative(double Balance, double rate, double time)
     // been compounded.
     return bal;
 }
-
-
-
-
-
 // Function checks for user input passed by reference with one paramater/
 
 void setInput(int &time,double& rate,double &balance)
