@@ -62,8 +62,6 @@ if ( time <= 0 )
 return computeRecursive(Balance*(1+rate/100), rate, time-1);
 } 
 
-
-
 void printTable(double Balance, double rate, double time){
 float bal = Balance;
     for (int i = 0; i < time; i++)
@@ -80,9 +78,7 @@ float bal = Balance;
        
        bal += interest;
 
-       
-    }
-
+   }
 }
 
 
@@ -105,11 +101,6 @@ double computeIterative(double Balance, double rate, double time)
     // been compounded.
     return bal;
 }
-
-
-
-
-
 // Function checks for user input passed by reference with one paramater/
 
 void setInput(int &time,double& rate,double &balance)
@@ -154,7 +145,6 @@ void setInput(int &time,double& rate,double &balance)
         cin >> time;
     }
 }
-
 
 //  clang++-7 -pthread -std=c++17 -o main main.cpp
 //  ./main
